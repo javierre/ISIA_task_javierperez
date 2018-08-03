@@ -49,7 +49,7 @@ public class Matriz {
         return matrizResultante;
     } 
 
-<<<<<<< HEAD
+
     
     public static Matriz invertirMatriz(Matriz a){ 
         int i, j, filasA, columnasA; 
@@ -66,7 +66,7 @@ public class Matriz {
 
     
     
-=======
+
     public static Matriz multiplicarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles { 
         int i, j, k, filasA, columnasA, filasB, columnasB; 
         filasA = a.getDimension().height; 
@@ -86,7 +86,7 @@ public class Matriz {
         return matrizResultante;
     } 
 
->>>>>>> Perez_Multiplicar
+
     @Override
     public String toString(){
         String ret = "";
