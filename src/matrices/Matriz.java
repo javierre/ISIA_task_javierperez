@@ -49,44 +49,6 @@ public class Matriz {
         return matrizResultante;
     } 
 
-<<<<<<< .merge_file_pgftcZ
-    
-    public static Matriz invertirMatriz(Matriz a){ 
-        int i, j, filasA, columnasA; 
-        filasA = a.getDimension().height; 
-        columnasA = a.getDimension().width; 
-        Matriz matrizResultante = new Matriz(columnasA, filasA, false);
-        for (i = 0; i < filasA; i++) { 
-            for (j = 0; j < columnasA; j++) { 
-                matrizResultante.datos[j][i] += a.datos[i][j]; 
-            } 
-        } 
-        return matrizResultante;
-    } 
-
-    
-    
-=======
-    public static Matriz multiplicarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles { 
-        int i, j, k, filasA, columnasA, filasB, columnasB; 
-        filasA = a.getDimension().height; 
-        columnasA = a.getDimension().width; 
-        filasB = b.getDimension().height; 
-        columnasB = b.getDimension().width;
-        if(columnasA!=filasB) throw new DimensionesIncompatibles("El producto de matrices requiere que la primera sea de tamaño nxp y la segunda pxm.");        
-        
-        Matriz matrizResultante = new Matriz(filasA, columnasB, false);
-        for (k = 0; k < columnasB; k++) { 
-            for (i = 0; i < filasA; i++) { 
-                for (j = 0; j < columnasA; j++) { 
-                    matrizResultante.datos[i][k] += a.datos[i][j] * b.datos[j][k]; 
-                } 
-            } 
-        }
-        return matrizResultante;
-    } 
-
->>>>>>> .merge_file_QjB42Y
     @Override
     public String toString(){
         String ret = "";
