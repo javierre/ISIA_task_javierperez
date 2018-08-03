@@ -17,6 +17,7 @@ public class Matrices {
         } catch (DimensionesIncompatibles ex) {
             ex.printStackTrace();
         }
+        System.out.println(Matriz.invertirMatriz(m1));
     }
     
 }
