@@ -49,7 +49,7 @@ public class Matriz {
         return matrizResultante;
     }
 
-
+    //Rama de multiplicacion
     public static Matriz multiplicarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles { 
         int i, j, k, filasA, columnasA, filasB, columnasB; 
         filasA = a.getDimension().height; 
