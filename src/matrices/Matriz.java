@@ -58,15 +58,15 @@ public class Matriz {
         columnasB = b.getDimension().width;
         if(columnasA!=filasB) throw new DimensionesIncompatibles("El producto de matrices requiere que la primera sea de tamaño nxp y la segunda pxm.");        
         
-        Matriz matrizResultante = new Matriz(filasA, columnasB, false);
+        Matriz matrizResultantePR = new Matriz(filasA, columnasB, false);
         for (k = 0; k < columnasB; k++) { 
             for (i = 0; i < filasA; i++) { 
                 for (j = 0; j < columnasA; j++) { 
-                    matrizResultante.datos[i][k] += a.datos[i][j] * b.datos[j][k]; 
+                    matrizResultantePR.datos[i][k] += a.datos[i][j] * b.datos[j][k]; 
                 } 
             } 
         }
-        return matrizResultante;
+        return matrizResultantePR;
     } 
     //Fin rama de multiplicacion
 
