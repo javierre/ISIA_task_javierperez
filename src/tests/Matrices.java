@@ -8,9 +8,9 @@ import matrices.Matriz;
 public class Matrices {
 
     public static void main(String[] args) {
-        Matriz m1 = new Matriz(2, 3, true);
+        Matriz m1 = new Matriz(3, 3, true);
         System.out.println(m1);
-        Matriz m2 = new Matriz(3, 2, true);
+        Matriz m2 = new Matriz(3, 3, true);
         System.out.println(m2);
         try {
             System.out.println(Matriz.sumarDosMatrices(m1, m2));
