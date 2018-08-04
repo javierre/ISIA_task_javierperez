@@ -47,9 +47,10 @@ public class Matriz {
                 matrizResultante.datos[i][j] += a.datos[i][j] + b.datos[i][j];
             }
         }
-        return matrizResultante;
+         return matrizResultante;
     }
 
+<<<<<<< HEAD
     
 
     public static Matriz multiplicarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles { 
@@ -71,6 +72,24 @@ public class Matriz {
         return matrizResultantePR;
     } 
 
+=======
+
+   
+    public static Matriz invertirMatriz(Matriz a){
+        int i, j, filasA, columnasA;
+        filasA = a.getDimension().height;
+        columnasA = a.getDimension().width;
+        Matriz matrizResultanteI = new Matriz(columnasA, filasA, false);
+        for (i = 0; i < filasA; i++) {
+            for (j = 0; j < columnasA; j++) {
+                matrizResultanteI.datos[j][i] += a.datos[i][j];
+            }
+        }
+        return matrizResultanteI;
+    }
+
+    
+>>>>>>> Perez_Invertir
 
 
     @Override
