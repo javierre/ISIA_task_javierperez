@@ -35,21 +35,6 @@ public class Matriz {
         return new Dimension(datos[0].length, datos.length);
     }
 
-    public static Matriz sumarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles {
-        if(! a.getDimension().equals(b.getDimension())) throw new DimensionesIncompatibles("La suma de matrices requiere matrices de las mismas dimensiones");
-        int i, j, filasA, columnasA;
-        filasA = a.getDimension().height;
-        columnasA = a.getDimension().width;
-        Matriz matrizResultante = new Matriz(filasA, columnasA, false);
-        for (i = 0; i < filasA; i++) {
-            for (j = 0; j < columnasA; j++) {
-                matrizResultante.datos[i][j] += a.datos[i][j] + b.datos[i][j];
-            }
-        }
-        return matrizResultante;
-    }
-
-    //Rama de multiplicacion
     public static Matriz multiplicarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles { 
         int i, j, k, filasA, columnasA, filasB, columnasB; 
         filasA = a.getDimension().height; 
@@ -68,7 +53,23 @@ public class Matriz {
         }
         return matrizResultante;
     } 
-    //Fin rama de multiplicacion
+
+
+    public static Matriz sumarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles {
+        if(! a.getDimension().equals(b.getDimension())) throw new DimensionesIncompatibles("La suma de matrices requiere matrices de las mismas dimensiones");
+        int i, j, filasA, columnasA;
+        filasA = a.getDimension().height;
+        columnasA = a.getDimension().width;
+        Matriz matrizResultante = new Matriz(filasA, columnasA, false);
+        for (i = 0; i < filasA; i++) {
+            for (j = 0; j < columnasA; j++) {
+                matrizResultante.datos[i][j] += a.datos[i][j] + b.datos[i][j];
+            }
+        }
+        return matrizResultante;
+    }
+
+    
 
 
     @Override
