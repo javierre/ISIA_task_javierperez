@@ -47,22 +47,22 @@ public class Matriz {
             }
         }
          return matrizResultante;
-    } 
+    }
 
 
     //Rama para invertir
-    public static Matriz invertirMatriz(Matriz a){ 
-        int i, j, filasA, columnasA; 
-        filasA = a.getDimension().height; 
-        columnasA = a.getDimension().width; 
+    public static Matriz invertirMatriz(Matriz a){
+        int i, j, filasA, columnasA;
+        filasA = a.getDimension().height;
+        columnasA = a.getDimension().width;
         Matriz matrizResultante = new Matriz(columnasA, filasA, false);
-        for (i = 0; i < filasA; i++) { 
-            for (j = 0; j < columnasA; j++) { 
-                matrizResultante.datos[j][i] += a.datos[i][j]; 
-            } 
-        } 
+        for (i = 0; i < filasA; i++) {
+            for (j = 0; j < columnasA; j++) {
+                matrizResultante.datos[j][i] += a.datos[i][j];
+            }
+        }
         return matrizResultante;
-    } 
+    }
 
     //Fin rama para invertir
 
