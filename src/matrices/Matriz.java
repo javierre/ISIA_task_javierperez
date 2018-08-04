@@ -55,13 +55,13 @@ public class Matriz {
         int i, j, filasA, columnasA;
         filasA = a.getDimension().height;
         columnasA = a.getDimension().width;
-        Matriz matrizResultante = new Matriz(columnasA, filasA, false);
+        Matriz matrizResultanteI = new Matriz(columnasA, filasA, false);
         for (i = 0; i < filasA; i++) {
             for (j = 0; j < columnasA; j++) {
-                matrizResultante.datos[j][i] += a.datos[i][j];
+                matrizResultanteI.datos[j][i] += a.datos[i][j];
             }
         }
-        return matrizResultante;
+        return matrizResultanteI;
     }
 
     
