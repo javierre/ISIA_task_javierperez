@@ -50,7 +50,7 @@ public class Matriz {
     } 
 
 
-    
+    //Rama para invertir
     public static Matriz invertirMatriz(Matriz a){ 
         int i, j, filasA, columnasA; 
         filasA = a.getDimension().height; 
